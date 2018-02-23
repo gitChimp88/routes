@@ -3,7 +3,7 @@ import React from 'react'
 export default class Navbar extends React.Component{
 	
 	handleClick(e){
-		
+	   debugger;
 		var name = e.target.textContent
 		
 		if(name == "Home") {
@@ -22,17 +22,21 @@ export default class Navbar extends React.Component{
 			display: "inline-block",
 			margin: "20px",
 			fontSize: "20px",
-			fontWeight: "bold"
+			fontWeight: "bold",
 			
 		}
 		
+		const centers = {
+			textAlign: "center"
+		}
+		
 		return( 
-			<div>
+			<div style={centers}>
 				<ul>
-					<li onClick={this.handleClick.bind(this)}>Home</li>
-					<li onClick={this.handleClick.bind(this)}>About</li>
-					<li onClick={this.handleClick.bind(this)}>Contact</li>
-					<li onClick={this.handleClick.bind(this)}>Gallery</li>
+					<li style={style} onClick={this.handleClick.bind(this)}>Home</li>
+					<li style={style} onClick={this.handleClick.bind(this)}>About</li>
+					<li style={style} onClick={this.handleClick.bind(this)}>Contact</li>
+					<li style={style} onClick={this.handleClick.bind(this)}>Gallery</li>
 				</ul>
 			</div>
 			

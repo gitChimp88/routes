@@ -4,7 +4,7 @@ import React from 'react';
 
 import { render } from 'react-dom';
 
-import {routes} from '../imports/routes.js';
+import routes from '../imports/routes.js';
 
 
 
